@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false)
+    header('Location: login.html');
+    $page = $_GET['page'] ?? "dashboard";
+?>
 <?php require_once('./header.php');?>
 <div class="Main-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
@@ -25,10 +31,13 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a>
+                    <a class="nav-link" href="./logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+<main class="container-fluid">
+    <?php include("./pages/".$page.".php"); ?>
+</main>
 <?php require_once('./footer.php');?>

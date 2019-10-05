@@ -1,15 +1,20 @@
 <?php require_once('../pages/header.php');?>
 
 <div class="login-container">
-    <form>
+    <form action="./auth.php" method="POST">
         <img src="../assets/logo.svg" alt="samba" id="Login-logo"/>
-            <input 
-                placeholder="Username" 
+            <input
+                name="username"
+                placeholder="Username"
                 type="text"
+                required
+                autofocus
             />
             <input
+                name="password"
                 placeholder="Password"
                 type="password"
+                required
             />
         <button type="submit">Login</button>
     </form>
