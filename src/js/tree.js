@@ -49,8 +49,8 @@ function usuarios(j) {
                     r.push(data.instance.get_node(data.selected[i]).parent);
 
                     if (data.instance.get_node(data.selected[i]).parent != "#") {
-                        const header = `<button onclick="clickInf()" id="inf">Informações</button>
-                                <button onclick="diretorios()" id="dir">Diretorios</button>`
+                        const header = `<button class="btn btn-outline-secondary btn-sm" onclick="clickInf()" id="inf">Informações</button>
+                                <button class="btn btn-outline-secondary btn-sm" onclick="diretorios()" id="dir">&nbspDiretórios&nbsp</button>`
                         $('#event_header').html(header);
                         usuario = data.instance.get_node(data.selected[i]);
                         $('#event_body').html(Inf(usuario));
