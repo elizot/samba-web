@@ -1,8 +1,6 @@
 <div class="row">
     <div class="col-sm-5">
         <div class="card bg-light shadow">
-            <div class="card-header p-2">
-            </div>
             <div class="card-body">
 
             </div>
@@ -20,5 +18,4 @@
         </div>
     </div>
 </div>
-<div class="row mt-4">
 
