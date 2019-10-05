@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false)
-    header('Location: login.html');
+    header('Location: login.php');
     $page = $_GET['page'] ?? "dashboard";
 ?>
 <?php require_once('./header.php');?>
@@ -23,10 +23,7 @@
                     <a class="nav-link" href="#"><i class="fa fa-building" aria-hidden="true"></i> Unidade Organizacional</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> Usuários</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i> Grupos</a>
+                    <a class="nav-link" href="?page=usersgroups"><i class="fa fa-users" aria-hidden="true"></i> Grupos e Usuários</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -37,7 +34,7 @@
         </div>
     </nav>
 </div>
-<main class="container-fluid">
-    <?php include("./pages/".$page.".php"); ?>
+<main class="container-fluid" id="index-main">
+    <?php include($page.".php"); ?>
 </main>
 <?php require_once('./footer.php');?>
