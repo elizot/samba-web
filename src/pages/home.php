@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"> <i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="?page=dashboard"> <i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-building" aria-hidden="true"></i> Unidade Organizacional</a>

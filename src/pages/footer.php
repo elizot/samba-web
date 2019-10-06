@@ -11,5 +11,6 @@
 <!-- Icones jsTree-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
 <script src="../js/tree.js"></script>
+<script src="../js/info.js"></script>
 </body>
 </html>

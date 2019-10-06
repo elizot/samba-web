@@ -14,7 +14,7 @@
             <div class="card-header p-2" id="event_header">
             </div>
             <div class="card-body" id="event_body">
-
+                <img src="../assets/pasta.jpg">
             </div>
         </div>
     </div>

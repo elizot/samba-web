@@ -1,0 +1,45 @@
+[{
+        "info1": "Hostname do Servidor",
+        "info2": "samba_server"
+    },
+    {
+        "info1": "Sistema Operacional",
+        "info2": "Debian 10"
+    },
+    {
+        "info1": "Horario no Servidor",
+        "info2": "Domingo, outubro 6,2019 19:21 PM"
+    },
+    {
+        "info1": "Kernel e CPU",
+        "info2": "Linux 4.18.0-21-generic on x86_64"
+    },
+    {
+        "info1": "Informações do Processador",
+        "info2": "Intel(R) Core(TM) i5-4210U @ 1.70GHz, 4 Cores"
+    },
+    {
+        "info1": "Temperatura do CPU",
+        "info2": "Core 0 52°C, Core 1 54°C"
+    },
+    {
+        "info1": "Tempo de Atidade",
+        "info2": "3 hours, 21 minutes"
+    },
+    {
+        "info1": "Processos rodando",
+        "info2": "241"
+    },
+    {
+        "info1": "Memoria Ram",
+        "info2": "7.51 GB total/ 3.75 GB used"
+    },
+    {
+        "info1": "Memoria virtual",
+        "info2": "3.64 GB total/ 17.83 MB used"
+    },
+    {
+        "info1": "Espaço no disco local",
+        "info2": "323.37 GB total/ 102.26 GB free/ 221.11 GB used"
+    }
+]

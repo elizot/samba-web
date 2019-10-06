@@ -32,6 +32,7 @@ fetch('../data/user.json')
 
 function usuarios(j) {
     $('#event_group').html('<div id="jstree"></div>')
+
     $("#jstree").jstree({
         'core': {
             'data': j
@@ -48,7 +49,7 @@ function usuarios(j) {
                 for (i = 0, j = data.selected.length; i < j; i++) {
                     r.push(data.instance.get_node(data.selected[i]).parent);
 
-                    if (data.instance.get_node(data.selected[i]).parent != "#") {
+                    if (data.instance.get_node(data.selected[i]).parent) {
                         const header = `<button class="btn btn-outline-secondary btn-sm" onclick="clickInf()" id="inf">Informações</button>
                                 <button class="btn btn-outline-secondary btn-sm" onclick="diretorios()" id="dir">&nbspDiretórios&nbsp</button>`
                         $('#event_header').html(header);
