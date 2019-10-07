@@ -1,7 +1,7 @@
 <?php
 session_start();
-$login = $_POST['username'] ?? null;
-$password = $_POST['password'] ?? null;
+$login = sha1($_POST['username']) ?? null;
+$password = sha1($_POST['password']) ?? null;
 if(authenticateFake($login, $password)){
   $_SESSION['auth'] = true;
   header('Location: home.php');
@@ -14,5 +14,5 @@ if(authenticateFake($login, $password)){
 //     return username($user, $pass);
 // }
 function authenticateFake($user, $pass){
-   return $user == 'reinaldo' && $pass == '123';
+  return $user == sha1('reinaldo') && $pass == sha1('123');
 }

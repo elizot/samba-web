@@ -16,7 +16,7 @@
                 type="password"
                 required
             />
-        <button type="submit">Login</button>
+        <button type="submit">Entrar</button>
     </form>
 </div>
 

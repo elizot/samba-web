@@ -1,4 +1,3 @@
-const listInfo = document.querySelector('#list-info')
 fetch('../data/info.json')
     .then(res => res.json())
     .then(json => showContent(json))

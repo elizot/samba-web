@@ -19,9 +19,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="?page=dashboard"> <i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-building" aria-hidden="true"></i> Unidade Organizacional</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="?page=usersgroups"><i class="fa fa-users" aria-hidden="true"></i> Grupos e Usuários</a>
                 </li>
